@@ -789,7 +789,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] 0.4494818</code></pre>
 <p>一般情况下是要做<strong>卡方检验</strong>，首先需要计数理论频数，注意理论频数不是个数，需要统计，然后才知道选择那种统计学方法。不过<code>epiDisplay</code>包里有个很简单的<code>cc()</code>函数，也可以一步把卡方和Fisher的结果全部算好。</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="原始临床数据表.html#cb8-1" aria-hidden="true" tabindex="-1"></a>epiDisplay<span class="sc">::</span><span class="fu">cc</span>(<span class="at">cctable =</span> location) <span class="do">##可以计算优势比OR值和两种列联表的检验</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="pic/unnamed-chunk-7-1.png" width="672" /></p>
 <pre><code>## 
 ##        
 ##         LESS LUL Total
@@ -1083,7 +1083,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb82-7"><a href="原始临床数据表.html#cb82-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">ylab=</span><span class="st">&quot;Operation time (min)&quot;</span>,</span>
 <span id="cb82-8"><a href="原始临床数据表.html#cb82-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">ggtheme =</span> <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">12</span>)) <span class="sc">+</span> <span class="co">#主题和字号</span></span>
 <span id="cb82-9"><a href="原始临床数据表.html#cb82-9" aria-hidden="true" tabindex="-1"></a>              <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">120</span>) <span class="co"># 设置Y轴范围，不设置的话会从最小值开始</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="pic/unnamed-chunk-14-1.png" width="672" /></p>
 
 </div>
 </div>
